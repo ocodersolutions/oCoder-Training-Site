@@ -5,7 +5,6 @@
 .silder{
         width: 100%;
         background: url(../img/bg-slider-2.png);
-        margin: 0px -15px;
 }
 #accordion2 {
         color:#fff;
@@ -13,7 +12,7 @@
         list-style:none;
         overflow:scroll;
         padding:0;
-        width:825px;
+        width:855px;
 }
 #accordion2 li {
         height:150px; /* Needed in case javascript is disabled */
@@ -22,17 +21,17 @@
 }
 #accordion2 .slide_thumb {
         background: rgba(249, 249, 249, 0.24); 
-        left:10px;
+        left:20px;
         padding:5px;
         position:absolute;
         top:20px;
 }
-#accordion2 p {
+#accordion2 p { 
         left:320px;
         position:absolute;
         width: 100%;
         line-height: 1.8;
-        margin-left: 16px;
+        margin-left: 25px;
 }
 #accordion2 .slide_title {
         text-shadow:0 1px 0 #333;
@@ -41,7 +40,7 @@
 #accordion2 .slide_content {
         color:rgba(255,255,255,0.6);
         line-height:18px;
-        top:65px;
+        top:65px;       
 }
 #accordion2 .slide_button {
         font-size:16px;
