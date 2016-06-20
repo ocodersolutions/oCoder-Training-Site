@@ -211,9 +211,7 @@ a:focus {
   color: #6d6d6d;
 }
 .post-new .widget-text-heading h3 {
-  border-bottom: 1px solid #c7c6c6;
   color: #3F3737;
-  font-weight: 700;
 }
 .post-new .widget-text-heading .underline {
   border-bottom: 1px solid #eee;
@@ -292,7 +290,7 @@ a:focus {
   border-top: 1px solid #eee;
 }
 .blog-sidebar ul {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .sidebar-categories li a {
   padding: 10px 0;
@@ -568,4 +566,7 @@ ul.tag-info li i {
 }
 .header span.caret{
 	display: none;
+}
+.sp-bold{
+	border-bottom: 1px solid #c7c6c6;
 }

@@ -20,7 +20,7 @@
                                         <li class="uc_box" style="background: #8460a4;">
                                             <a href="page-frontend.html">
                                                 <span class="uc_number" style=" background: #774e9c;">1</span>
-                                                <h3>HTML/CSS/JS</h3>
+                                                <h3>HTML/CSS</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                             </a>
                                         </li>
@@ -66,8 +66,8 @@
                         <div class="col-md-9 col-sm-9 blog-posts">
                         	<div class="row">
 	                           	<div class="widget-text-heading">
-	                                <h3>
-										<span class="sp-bold">EVENT</span>
+	                                <h3  class="sp-bold">
+										<span>EVENT</span>
 									</h3>
 	                        	</div>
 	                            <!-- slider -->
@@ -77,8 +77,8 @@
 							</div>
                             <div class="row">
                             	<div class="widget-text-heading">
-	                                <h3>
-										<span class="sp-bold">BÀI VIẾT MỚI NHẤT</span>
+	                                <h3 class="sp-bold">
+										<span >BÀI VIẾT MỚI NHẤT</span>
 									</h3>
 									 <!-- contet post -->
 	                            <div class="row blog-content-line">
@@ -96,7 +96,7 @@
 	                            				 25/06/2016
 	                            			</li>
 	                            			<li>
-	                            				<i class="fa fa-comments"></i>
+	                            				<i class="fa fa-eye"></i>
 	                            				0
 	                            			</li>
 	                            			<li>
@@ -128,7 +128,7 @@
 	                            				 25/06/2016
 	                            			</li>
 	                            			<li>
-	                            				<i class="fa fa-comments"></i>
+	                            				<i class="fa fa-eye"></i>
 	                            				0
 	                            			</li>
 	                            			<li>
@@ -160,7 +160,7 @@
 	                            				 25/06/2016
 	                            			</li>
 	                            			<li>
-	                            				<i class="fa fa-comments"></i>
+	                            				<i class="fa fa-eye"></i>
 	                            				0
 	                            			</li>
 	                            			<li>

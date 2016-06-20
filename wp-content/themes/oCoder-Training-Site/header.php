@@ -79,7 +79,7 @@
 	    <!-- BEGIN HEADER -->
 	        <div class="header">
 	            <div class="container">
-	                <a href="index.html" class="site-logo" title="">
+	                <a href="/" class="site-logo" title="">
 	                    <img src="<?php echo get_template_directory_uri()?>/img/logo/logo_2.png" alt="">
 	                </a>
 	    <!-- BEGIN NAVIGATION -->
