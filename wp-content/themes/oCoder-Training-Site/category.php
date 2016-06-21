@@ -23,9 +23,10 @@
                                 </a>
                             </div>
                             <div class="col-md-8 col-sm-8">
-                                <h2>
+                                <h3>
 									<a href="<?php the_permalink();?>"><?php the_title();?></a>
-                        		</h2>
+                        		</h3>
+                        		
                                 <p>
                                     <?php the_excerpt();?>
                                 </p>
@@ -55,7 +56,10 @@
                             </div>
                         </div>
                         <hr class="blog-post-sep">
-                        <?php endwhile; ?>
+                        <?php endwhile; else: ?>
+                         	<h3>Tài nguyên chuyên mục 
+                         		đang được xây dựng!</h3>
+                         	<h5>Bạn vui lòng trở lại sau</h5>
                     	<?php endif; ?>
                     	<!--end contet post -->
                     </div>

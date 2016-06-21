@@ -10,6 +10,7 @@
 					<div class="col-sm-12 post-new">
 						<div class="breadcrum_links">
 							<?php the_breadcrumb(); ?>
+
 	                    </div>
 	                </div>
                 </div>
@@ -22,17 +23,11 @@
 	                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>	
 	                                    </a>
 	                                </h3>
-	                                <!-- post thumbnail -->
-									<!-- <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-											<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-										</a>
-									<?php endif; ?> -->
-									<!-- /post thumbnail -->
+	                                <hr class="blog-post-sep">
 	                                <div class="sub-text">
 	                                   	<?php the_content(); // Dynamic Content ?>
 	                                </div>
-	                                
+									<hr class="blog-post-sep">
 									<ul class="blog-info">
 	                        			<li>
 	                        				<i class="fa fa-calendar"></i>
@@ -55,6 +50,7 @@
 											?>
 	                        			</li>
 				                    </ul>
+				                    <hr class="blog-post-sep">
                             	</div>
                         	</div>
 						 <?php endwhile; ?>

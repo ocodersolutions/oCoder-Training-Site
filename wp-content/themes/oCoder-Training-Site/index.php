@@ -28,21 +28,21 @@
                                             </a>
                                         </li>
                                         <li class="uc_box" style="background: #FF6863;">
-                                            <a href="page-php.html">
+                                            <a href="<?php echo get_category_link(10)?>">
                                                 <span class="uc_number" style="background: #FC5653;">2</span>
-                                                <h3>PHP Cơ bản</h3>
+                                                <h3>PHP Căn bản</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                             </a>
                                         </li>
                                         <li class="uc_box" style=" background: #3DCEC7;">
-                                            <a href="page-zend.html">
+                                            <a href="<?php echo get_category_link(13)?>">
                                                 <span class="uc_number" style=" background: #2ABFB5;">3</span>
                                                 <h3>Zend Framework</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                             </a>
                                         </li>
                                         <li class="uc_box" style=" background: #F4C949;">
-                                            <a href="page-wordpress.html">
+                                            <a href="<?php echo get_category_link(8)?>">
                                                 <span class="uc_number" style="background: #EABB3A;">4</span>
                                                 <h3>Wordpress</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -85,20 +85,20 @@
 									</h3>
 									 <!-- contet post -->
 								<?php
-									$args = array( 'numberposts' => '3' );
-									
-									$recent_posts = wp_get_recent_posts( $args );
-									foreach ($recent_posts as $recent) { ?>
+									global $post;
+									$recent_posts = get_posts('numberposts=3');
+									foreach ($recent_posts as $post) { ?>
 										<div class="row blog-content-line">
 			                            	<div class="col-md-4 col-sm-4">
-			                            		<a href="<?php get_permalink();?>">
+			                            		<a href="<?php the_permalink();?>">
 			                            		<?php the_post_thumbnail('large',array('class'=>'img-responsive'));?>	
 			                            		</a>
 			                            	</div>
 			                            	<div class="col-md-8 col-sm-8">
-			                            		<h2>
-													<a href="<?php the_permalink();?>"><?php the_title();?></a>
-			                            		</h2>
+			                            		<h3>
+													<a href="<?php the_permalink();?>">
+													<?php the_title();?></a>
+			                            		</h3>
 			                            		<p><?php the_excerpt();?></p>
 			                            		<ul class="blog-info">
 			                            			<li>
@@ -128,10 +128,6 @@
 									<?php } ?>
 	                            <!--end contet post -->
 	                        	</div>
-	                        	<div class="pagination_post">
-	                        		<?php page_nav(); ?>
-	                        	</div>
-								<hr class="blog-post-sep">
                             </div>
                         </div>
         <!-- END LEFT SIDEBAR -->

@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </section>
-            <div class="container">
+         <!--    <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 pre-footer-col">
                         <div class="introduction">
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="end-footer">
         	<div class="container">

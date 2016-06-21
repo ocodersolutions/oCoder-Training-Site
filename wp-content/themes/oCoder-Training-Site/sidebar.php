@@ -13,7 +13,7 @@
                     </div>
 					<?php if(function_exists('dynamic_sidebar') && dynamic_sidebar('Right-Sidebar')) :else : ?>
 					<?php endif;?>
-				    <div class="widget-text-heading">
+				    <!-- <div class="widget-text-heading">
 				    	<div class="post-care">
 				            <h3  class="sp-bold">
 								<span>BÀI ĐƯỢC QUAN TÂM</span>
@@ -75,7 +75,7 @@
 				    		</div>
 						</div>
 						
-				    </div>
+				    </div> -->
 				</div>
 <!-- END RIGHT SIDEBAR -->				
 			</div>

@@ -1,13 +1,16 @@
 <div class="banner-content main-baner">
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-sm-12 text-center">
-	                        <div class="title text-center">
-	                            <div class="h1-sub">
-	                                <h1>DIỄN ĐÀN CHIA SẺ KIẾN THỨC</h1>
-	                            </div>
-	                            <p>SHARE THE BEST</p>
-	                        </div>
+	                    <div class="col-sm-12">
+	                        <div class="col-sm-6">
+		                        <div class="title">
+		                            <div class="h1-sub ">
+		                                <h1>CHIA SẺ KIẾN THỨC</h1>
+		                                <p>SHARE THE BEST</p>
+		                            </div>
+		                        </div>
+                    		</div>
+                    		<div class="col-sm-6"></div> 
 	                    </div>
 	                    <div class="col-sm-12">
 	                        <div class="banner-top text-center">

@@ -475,7 +475,7 @@ function new_excrept_more($more)
 {
     global $post;
     return "<p class='slide_button'>
-                <a href='" . get_permalink($post->ID) ."' class='more btn-more ripple''> Xem thêm </a>
+                <a href='" . get_permalink($post->ID) ."' class='more btn-more ripple'> Xem thêm </a>
             </p>";
 }
 add_filter('excerpt_more','new_excrept_more');
@@ -589,11 +589,12 @@ function posts_custom_column_views($column_name, $id){
 // breadcumb
 function the_breadcrumb() {
     if (!is_home()) {
+        echo '<ul class="breadcrumb"> <li>';
         echo '<a href="';
             echo get_option('home');
             echo '">';
                 bloginfo('name');
-        echo "</a> / ";
+        echo "</a> </li> /";
         if (is_category() || is_single()) {
             the_category('title_li=');
             if (is_single()) {

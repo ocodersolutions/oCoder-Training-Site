@@ -50,16 +50,18 @@
 	                        <ul class="list-unstyled list-inline">
 	                            <li>
 	                                <i class="fa fa-phone"></i>
-	                                <span>+84 960 009 280</span>
+	                                <a href="tel:+84963009280"><span>+84 960 009 280</span></a>
 	                            </li>
 	                            <li>
 	                                <i class="fa fa-envelope-o"></i>
-	                                <span>ocodertranning@ocoder.com</span>
+	                                <a href="mailto:ocodersolutions@gmail.com">
+	                                	<span>ocodersolutions@gmail.com</span>
+	                                </a>
 	                            </li>
 	                        </ul>
 	                    </div>
 	                    <div class="col-md-6 col-sm-6 additional-nav">
-	                        <ul class="list-unstyled list-inline pull-right">
+	                       <!--  <ul class="list-unstyled list-inline pull-right">
 	                            <li>
 	                                <a href="#" class="pbr-user-login">
 	                                    <i class="fa fa-sign-in"></i> Đăng Nhập
@@ -70,7 +72,7 @@
 	                                    <i class="fa fa-pencil"></i> Đăng ký
 	                                </a>
 	                            </li>
-	                        </ul>
+	                        </ul> -->
 	                    </div>
 	                </div>
 	            </div>
@@ -83,7 +85,7 @@
 	                    <img src="<?php echo get_template_directory_uri()?>/img/logo/logo_2.png" alt="">
 	                </a>
 	    <!-- BEGIN NAVIGATION -->
-	               <nav class="nav-edit navbar navbar-inverse pull-right">
+	               <nav class="nav-edit navbar pull-right">
 				  	<?php 
 				     wp_nav_menu( array(
 				       'theme_location' => 'main_nav', //Menu location của bạn
