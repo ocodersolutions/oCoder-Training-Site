@@ -1,7 +1,7 @@
  <!-- RIGHT SIDEBAR -->
 				<div class="col-md-3 col-sm-3  blog-sidebar">
 				   	
-				   	 <div class="post-care">
+				   	<div class="post-care">
                         <h3 class="sp-bold">
                             <span>DANH MỤC KHÁC</span>
                         </h3>
@@ -11,7 +11,8 @@
                     		)); 
                        	?>     
                     </div>
-					
+					<?php if(function_exists('dynamic_sidebar') && dynamic_sidebar('Right-Sidebar')) :else : ?>
+					<?php endif;?>
 				    <div class="widget-text-heading">
 				    	<div class="post-care">
 				            <h3  class="sp-bold">

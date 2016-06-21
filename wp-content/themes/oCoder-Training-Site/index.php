@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php get_header();
+	include (TEMPLATEPATH . '/inc/main-banner.php');
+	?>
+	</div><!--//end baner -->
 	<div class="content-wrap">
         <!-- FEATURE -->
 		<div class="feature-box">
@@ -9,8 +12,8 @@
                     <div class="content-element">
                         <div class="widget-text-heading">
                             <h3>
-										<span class="sp-bold">TIÊU ĐIỂM</span>
-									</h3>
+								<span class="sp-bold">TIÊU ĐIỂM</span>
+							</h3>
                         </div>
                         <div class="uc_four_colored_feature_boxs" style="max-width: 1170px; margin: 0 auto; ">
                             <div class="uc_row">
@@ -18,7 +21,7 @@
                                     <!-- Color box -->
                                     <ul class="uc_servicesList">
                                         <li class="uc_box" style="background: #8460a4;">
-                                            <a href="page-frontend.html">
+                                            <a href="<?php echo get_category_link(5); ?> ">
                                                 <span class="uc_number" style=" background: #774e9c;">1</span>
                                                 <h3>HTML/CSS</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -81,114 +84,54 @@
 										<span >BÀI VIẾT MỚI NHẤT</span>
 									</h3>
 									 <!-- contet post -->
-	                            <div class="row blog-content-line">
-	                            	<div class="col-md-4 col-sm-4">
-	                            		<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/upload-post/img4.jpg" alt="">
-	                            	</div>
-
-	                            	<div class="col-md-8 col-sm-8">
-	                            		<h2>
-											<a href="blog-item.html">Lorem ipsum dolor sit amet</a>
-	                            		</h2>
-	                            		<ul class="blog-info">
-	                            			<li>
-	                            				<i class="fa fa-calendar"></i>
-	                            				 25/06/2016
-	                            			</li>
-	                            			<li>
-	                            				<i class="fa fa-eye"></i>
-	                            				0
-	                            			</li>
-	                            			<li>
-	                            				<i class="fa fa-tags"></i>
-	                            				PHP, CodeIgniter
-	                            			</li>
-	                            		</ul>
-	                            		<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-	                            		<a href="blog-item.html" class="more btn-more ripple">
-	                            			Read more 
-	                            			<i class="icon-angle-right"></i>
-	                            		</a>
-	                            	</div>
-	                            
-	                            </div>
-	                            <hr class="blog-post-sep">
-	                            <div class="row blog-content-line">
-	                            	<div class="col-md-4 col-sm-4">
-	                            		<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/upload-post/img4.jpg" alt="">
-	                            	</div>
-
-	                            	<div class="col-md-8 col-sm-8">
-	                            		<h2>
-											<a href="blog-item.html">Lorem ipsum dolor sit amet</a>
-	                            		</h2>
-	                            		<ul class="blog-info">
-	                            			<li>
-	                            				<i class="fa fa-calendar"></i>
-	                            				 25/06/2016
-	                            			</li>
-	                            			<li>
-	                            				<i class="fa fa-eye"></i>
-	                            				0
-	                            			</li>
-	                            			<li>
-	                            				<i class="fa fa-tags"></i>
-	                            				PHP, CodeIgniter
-	                            			</li>
-	                            		</ul>
-	                            		<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-	                            		<a href="blog-item.html" class="more btn-more ripple">
-	                            			Read more 
-	                            			<i class="icon-angle-right"></i>
-	                            		</a>
-	                            	</div>
-	                            
-	                            </div>
-	                             <hr class="blog-post-sep">
-	                           	<div class="row blog-content-line">
-	                            	<div class="col-md-4 col-sm-4">
-	                            		<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/upload-post/img4.jpg" alt="">
-	                            	</div>
-
-	                            	<div class="col-md-8 col-sm-8">
-	                            		<h2>
-											<a href="blog-item.html">Lorem ipsum dolor sit amet</a>
-	                            		</h2>
-	                            		<ul class="blog-info">
-	                            			<li>
-	                            				<i class="fa fa-calendar"></i>
-	                            				 25/06/2016
-	                            			</li>
-	                            			<li>
-	                            				<i class="fa fa-eye"></i>
-	                            				0
-	                            			</li>
-	                            			<li>
-	                            				<i class="fa fa-tags"></i>
-	                            				PHP, CodeIgniter
-	                            			</li>
-	                            		</ul>
-	                            		<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-	                            		<a href="blog-item.html" class="more btn-more ripple">
-	                            			Read more 
-	                            			<i class="icon-angle-right"></i>
-	                            		</a>
-	                            	</div>
-	                            
-	                            </div>
-	                             <hr class="blog-post-sep">
+								<?php
+									$args = array( 'numberposts' => '3' );
+									
+									$recent_posts = wp_get_recent_posts( $args );
+									foreach ($recent_posts as $recent) { ?>
+										<div class="row blog-content-line">
+			                            	<div class="col-md-4 col-sm-4">
+			                            		<a href="<?php get_permalink();?>">
+			                            		<?php the_post_thumbnail('large',array('class'=>'img-responsive'));?>	
+			                            		</a>
+			                            	</div>
+			                            	<div class="col-md-8 col-sm-8">
+			                            		<h2>
+													<a href="<?php the_permalink();?>"><?php the_title();?></a>
+			                            		</h2>
+			                            		<p><?php the_excerpt();?></p>
+			                            		<ul class="blog-info">
+			                            			<li>
+			                            				<i class="fa fa-calendar"></i>
+			                            				By: <?php the_author();?> | On <?php the_time('d/m/Y');?>
+			                            			</li>
+			                            			<li>
+			                            				<i class="fa fa-eye"></i>
+															<?php setPostViews(get_the_ID()); ?>
+															<?php echo getPostViews(get_the_ID()); ?>
+			                            			</li>
+			                            			<li>
+			                            				<i class="fa fa-tags"></i>
+			                            				<?php
+															$posttags = get_the_tags();
+															if ($posttags) {
+															  foreach($posttags as $tag) {
+															    echo $tag->name . ' '; 
+															  }
+															}
+														?>
+			                            			</li>
+			                            		</ul>
+			                            	</div>
+	                           			 </div>
+	                           			<hr class="blog-post-sep">
+									<?php } ?>
 	                            <!--end contet post -->
 	                        	</div>
-
-	                            <ul class="pagination text-center">
-	                            	<li><a href="javascript:;">Prev</a></li>
-	                            	<li><a href="javascript:;">1</a></li>
-	                            	<li><a href="javascript:;">2</a></li>
-	                            	<li class="active"><a href="javascript:;">3</a></li>
-	                            	<li><a href="javascript:;">4</a></li>
-	                            	<li><a href="javascript:;">5</a></li>
-	                            	<li><a href="javascript:;">Next</a></li>
-	                            </ul>
+	                        	<div class="pagination_post">
+	                        		<?php page_nav(); ?>
+	                        	</div>
+								<hr class="blog-post-sep">
                             </div>
                         </div>
         <!-- END LEFT SIDEBAR -->

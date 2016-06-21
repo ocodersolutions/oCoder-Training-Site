@@ -53,15 +53,7 @@ a:focus {
   font-size: 14px;
 }
 .banner {
-  background: url(img/slider-01.png) no-repeat;
-  background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -ms-background-size: 100% 100%;
-  background-position: top center;
   position: relative;
-  background-size: cover;
 }
 .banner .header {
   background: #fff;
@@ -109,29 +101,41 @@ a:focus {
   float: left;
   text-transform: uppercase;
 }
-.banner .banner-content {
+.banner .banner-content  {
   font-weight: 300;
   font-size: 12px;
   font-family: 'Roboto Condensed', sans-serif;
+  
+  }
+.banner .main-baner{
+  background: url(img/slider-01.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -ms-background-size: 100% 100%;
+  background-position: top center;
+  position: relative;
+  // background-size: cover;
 }
-.banner .banner-content .title {
+.title {
   position: relative;
   top: 30px;
 }
-.banner .banner-content .title .h1-sub {
+.title h1 {
   background-color: rgba(0,0,0,0.25);
   color: #fff;
   width: 50%;
   padding: 5px 0px;
 }
-.banner .banner-content .title .h1-sub h1 {
+.title h1 {
   font-size: 3.01em;
   letter-spacing: 4px;
   font-weight: 300;
   margin: 0;
   text-transform: uppercase;
 }
-.banner .banner-content .title p {
+.title p {
   width: 30%;
   color: #fff;
   font-size: 3.01em;
@@ -140,6 +144,11 @@ a:focus {
   margin: 0;
   text-transform: uppercase;
   background-color: rgba(35,212,241,0.51);
+}
+.item-banner .title h1{
+  width: 35%;
+}
+.item-banner .title p{
 }
 .feature-box a {
   color: #FFFFFF;
@@ -181,15 +190,15 @@ a:focus {
 .post-new .blog-info li i {
   color: #00b7ff;
 }
-.post-new .pagination {
+.pagination {
   margin: 0;
 }
-.post-new .pagination li {
+.pagination li {
   display: inline-block;
   margin-left: -12px;
   margin-right: 17px;
 }
-.post-new .pagination li a {
+.pagination li a {
   border-radius: 25px !important;
 }
 .post-new .sub-text .img-id {
@@ -238,11 +247,6 @@ a:focus {
 }
 .post-new .blog-posts .blog-content-line .btn-more {
   border: none;
-  border-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
   color: #FFFFFF;
   position: relative;
   height: 29px;
@@ -262,7 +266,7 @@ a:focus {
   text-align: center;
   line-height: 29px;
   vertical-align: middle;
-  background: #253444;
+  background:#00b7ff;
 }
 .post-new .blog-posts .blog-content-line .ripple {
   overflow: hidden;
@@ -522,7 +526,8 @@ ul.tag-info li i {
   font-size: 0;
   white-space: nowrap;
 }
-.banner-html .banner-content {
+
+.html-banner{
   font-family: 'Roboto Condensed', sans-serif;
   background: url(img/bg-html.png) no-repeat;
   background-size: 100% 100%;
@@ -569,4 +574,46 @@ ul.tag-info li i {
 }
 .sp-bold{
 	border-bottom: 1px solid #c7c6c6;
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    color: #3F3737;
+    text-decoration:none;
+}
+ 
+.navigation li {
+    display: inline;
+}
+ 
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+}
+ 
+.navigation li a:hover,
+.navigation li.active a {
+    background-color: #00b7ff;
+    border: 1px solid #ddd;
+}
+.pagination_post ul{
+  padding-left: 0px; 
+}
+.item-banner{
+  font-family: 'Roboto Condensed', sans-serif;
+  background: url(img/bg-item.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -ms-background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  height: 180px;
 }

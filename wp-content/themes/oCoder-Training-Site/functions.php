@@ -62,30 +62,30 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
-// HTML5 Blank navigation
-function html5blank_nav()
-{
-	wp_nav_menu(
-	array(
-		'theme_location'  => 'header-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
-		'menu_class'      => 'menu',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
-		'depth'           => 0,
-		'walker'          => ''
-		)
-	);
-}
+// // HTML5 Blank navigation
+// function html5blank_nav()
+// {
+// 	wp_nav_menu(
+// 	array(
+// 		'theme_location'  => 'header-menu',
+// 		'menu'            => '',
+// 		'container'       => 'div',
+// 		'container_class' => 'menu-{menu slug}-container',
+// 		'container_id'    => '',
+// 		'menu_class'      => 'menu',
+// 		'menu_id'         => '',
+// 		'echo'            => true,
+// 		'fallback_cb'     => 'wp_page_menu',
+// 		'before'          => '',
+// 		'after'           => '',
+// 		'link_before'     => '',
+// 		'link_after'      => '',
+// 		'items_wrap'      => '<ul>%3$s</ul>',
+// 		'depth'           => 0,
+// 		'walker'          => ''
+// 		)
+// 	);
+// }
 
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
@@ -174,9 +174,9 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
+        'name' => __('Right-Sidebar'),
         'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
+        'id' => 'right-sidebar',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -467,7 +467,7 @@ if (function_exists('add_theme_support')){
 }
 // excerpt số chữ hiển thị
 function new_excrept_length($length){
-    return 20;
+    return 30;
 }
 add_filter('excerpt_length','new_excrept_length');
 
@@ -475,9 +475,134 @@ function new_excrept_more($more)
 {
     global $post;
     return "<p class='slide_button'>
-                <a href='" . get_permalink($post->ID) ."'> Xem thêm </a>
+                <a href='" . get_permalink($post->ID) ."' class='more btn-more ripple''> Xem thêm </a>
             </p>";
 }
 add_filter('excerpt_more','new_excrept_more');
 
+// Phân trang
+function page_nav() {
+ 
+    if( is_singular() )
+        return;
+ 
+    global $wp_query;
+ 
+    /** Stop execution if there's only 1 page */
+    if( $wp_query->max_num_pages <= 1 )
+        return;
+ 
+    $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+    $max   = intval( $wp_query->max_num_pages );
+ 
+    /** Add current page to the array */
+    if ( $paged >= 1 )
+        $links[] = $paged;
+ 
+    /** Add the pages around the current page to the array */
+    if ( $paged >= 3 ) {
+        $links[] = $paged - 1;
+        $links[] = $paged - 2;
+    }
+ 
+    if ( ( $paged + 2 ) <= $max ) {
+        $links[] = $paged + 2;
+        $links[] = $paged + 1;
+    }
+ 
+    echo '<div class="navigation"><ul>' . "\n";
+ 
+    /** Previous Post Link */
+    if ( get_previous_posts_link() )
+        printf( '<li>%s</li>' . "\n", get_previous_posts_link() );
+ 
+    /** Link to first page, plus ellipses if necessary */
+    if ( ! in_array( 1, $links ) ) {
+        $class = 1 == $paged ? ' class="active"' : '';
+ 
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+ 
+        if ( ! in_array( 2, $links ) )
+            echo '<li>…</li>';
+    }
+    /** Link to current page, plus 2 pages in either direction if necessary */
+    sort( $links );
+    foreach ( (array) $links as $link ) {
+        $class = $paged == $link ? ' class="active"' : '';
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+    }
+ 
+    /** Link to last page, plus ellipses if necessary */
+    if ( ! in_array( $max, $links ) ) {
+        if ( ! in_array( $max - 1, $links ) )
+            echo '<li>…</li>' . "\n";
+ 
+        $class = $paged == $max ? ' class="active"' : '';
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+    }
+    /** Next Post Link */
+    if ( get_next_posts_link() )
+        printf( '<li>%s</li>' . "\n", get_next_posts_link() );
+ 
+    echo '</ul></div>' . "\n";
+ 
+}
+// đếm số lượt xem nhiều nhất
+// function to display number of posts.
+function getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+    }
+    return $count.' Views';
+}
+ 
+// function to count views.
+function setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+// Add it to a column in WP-Admin
+add_filter('manage_posts_columns', 'posts_column_views');
+add_action('manage_posts_custom_column', 'posts_custom_column_views',5,2);
+function posts_column_views($defaults){
+    $defaults['post_views'] = __('Views');
+    return $defaults;
+}
+function posts_custom_column_views($column_name, $id){
+    if($column_name === 'post_views'){
+        echo getPostViews(get_the_ID());
+    }
+
+}
+// breadcumb
+function the_breadcrumb() {
+    if (!is_home()) {
+        echo '<a href="';
+            echo get_option('home');
+            echo '">';
+                bloginfo('name');
+        echo "</a> / ";
+        if (is_category() || is_single()) {
+            the_category('title_li=');
+            if (is_single()) {
+                echo " / ";
+                the_title();
+            }
+        } elseif (is_page()) {
+        echo the_title();
+        }
+    }
+}
 ?>
