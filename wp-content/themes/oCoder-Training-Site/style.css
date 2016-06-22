@@ -58,7 +58,6 @@ a:focus {
 .banner .header {
   background: #fff;
   border-radius: 0;
-  margin-bottom: 23px;
   z-index: 999;
   position: relative;
   background: #FFFFFF;
@@ -68,8 +67,6 @@ a:focus {
   font-size: 23px;
   font-weight: 400;
   margin-right: 67px;
-  padding-top: 8px;
-  padding-bottom: 0px;
 }
 .banner .header .header-navigation > ul > li {
   float: left;
@@ -109,13 +106,10 @@ a:focus {
   }
 .banner .main-baner{
   background: url(img/slider-01.png) no-repeat;
-  background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -ms-background-size: 100% 100%;
+  background-size: cover;
   background-position: top center;
   position: relative;
+
   // background-size: cover;
 }
 .title {
@@ -148,7 +142,7 @@ a:focus {
 }
 .title p {
   list-style: none;
-  width: 60%;
+  width: 63%;
   color:#FFFFFF;
   font-size: 3.01em;
   letter-spacing: 4px;
@@ -555,11 +549,7 @@ ul.tag-info li i {
 .html-banner{
   font-family: 'Roboto Condensed', sans-serif;
   background: url(img/bg-html.png) no-repeat;
-  background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -ms-background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   position: relative;
   height: 180px;
@@ -642,3 +632,57 @@ ul.tag-info li i {
   position: relative;
   height: 180px;
 }
+.nav-edit .navbar-toggle{
+  background-color:rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  padding: 6px 10px;
+  margin-right: 10px;
+}
+.nav-edit i{
+  font-size: 22px;
+  color:#eee;
+}
+.navigation-control{
+  float: right;;
+}
+
+/*********responsive****************/
+@media (min-width: 320px) and (max-width: 767px){
+  .banner .header{
+    background-color: rgba(0,0,0,.075);
+  }
+  .header .navbar{  
+    padding: 0px;
+  }
+  .banner .header .site-logo{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .nav-edit .nav>li{
+    border-bottom: 1px solid #e6e6e6;
+    background: #f5f5f5;
+  }
+
+}
+@media (min-width: 768px){
+  .banner .header{
+    background-color: #FFFFFF;
+  }
+  .header .navbar{  
+    padding: 0px;
+  }
+  .banner .header .site-logo{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .nav-edit .nav>li{
+    border-bottom: 1px solid #e6e6e6;
+    background: #FFFFFF;
+  }
+
+}
+
+
+
+
+/**************************/

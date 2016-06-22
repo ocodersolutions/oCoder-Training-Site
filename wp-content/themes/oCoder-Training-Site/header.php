@@ -43,64 +43,84 @@
 	<div class="wrapper">
 		<div class="banner">
 	    <!-- TOPBAR -->
-	        <div class="pre-header">
+	        <div class="pre-header hidden-xs">
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-md-6 col-sm-6 additional-info">
-	                        <ul class="list-unstyled list-inline">
-	                            <li>
-	                                <i class="fa fa-phone"></i>
-	                                <a href="tel:+84963009280"><span>+84 960 009 280</span></a>
-	                            </li>
-	                            <li>
-	                                <i class="fa fa-envelope-o"></i>
-	                                <a href="mailto:ocodersolutions@gmail.com">
-	                                	<span>ocodersolutions@gmail.com</span>
-	                                </a>
-	                            </li>
-	                        </ul>
-	                    </div>
-	                    <div class="col-md-6 col-sm-6 additional-nav">
-	                       <!--  <ul class="list-unstyled list-inline pull-right">
-	                            <li>
-	                                <a href="#" class="pbr-user-login">
-	                                    <i class="fa fa-sign-in"></i> Đăng Nhập
-	                                </a>
-	                            </li>
-	                            <li>
-	                                <a href="#" title="" class="pbr-user-register">
-	                                    <i class="fa fa-pencil"></i> Đăng ký
-	                                </a>
-	                            </li>
-	                        </ul> -->
-	                    </div>
-	                </div>
+	                	<div class="col-sm-12">
+		                    <div class="col-md-6 col-sm-6 additional-info">
+		                    	<div class="row">
+			                        <ul class="list-unstyled list-inline">
+			                            <li>
+			                                <i class="fa fa-phone"></i>
+			                                <a href="tel:+84963009280"><span>+84 960 009 280</span></a>
+			                            </li>
+			                            <li>
+			                                <i class="fa fa-envelope-o"></i>
+			                                <a href="mailto:ocodersolutions@gmail.com">
+			                                	<span>ocodersolutions@gmail.com</span>
+			                                </a>
+			                            </li>
+			                        </ul>
+			                    </div>
+		                    </div>
+		                    <div class="col-md-6 col-sm-6 additional-nav">
+		                    	<div class="<row">
+			                       <!--  <ul class="list-unstyled list-inline pull-right">
+			                            <li>
+			                                <a href="#" class="pbr-user-login">
+			                                    <i class="fa fa-sign-in"></i> Đăng Nhập
+			                                </a>
+			                            </li>
+			                            <li>
+			                                <a href="#" title="" class="pbr-user-register">
+			                                    <i class="fa fa-pencil"></i> Đăng ký
+			                                </a>
+			                            </li>
+			                        </ul> -->
+			                    </div>
+		                    </div>
+		                </div>
+	                </div>	
 	            </div>
 	        </div>
 	    <!-- //TOPBAR -->
 	    <!-- BEGIN HEADER -->
 	        <div class="header">
 	            <div class="container">
-	                <a href="/" class="site-logo" title="">
-	                    <img src="<?php echo get_template_directory_uri()?>/img/logo/logo_2.png" alt="">
-	                </a>
-	    <!-- BEGIN NAVIGATION -->
-	               <nav class="nav-edit navbar pull-right">
-				  	<?php 
-				     wp_nav_menu( array(
-				       'theme_location' => 'main_nav', //Menu location của bạn
-				       // 'menu' => 'Page Menu',
-				       'depth' => 2, //Số cấp menu đa cấp
-				       'container' => 'div', //Thẻ bao quanh cặp thẻ ul
-				       'container_class'=>'collapse navbar-collapse js-navbar-collapse', //class của thẻ bao quanh cặp thẻ ul
-				       'menu_class' => 'nav navbar-nav', //class của thẻ ul
-				       'walker' => new wp_bootstrap_navwalker()) //Cái này để nguyên, không thay đổi
-						);
-					?>
-					
-				</nav>
-	    <!-- END NAVIGATION -->
-	            </div>
+	            	<div class="row">	
+			    		<!-- BEGIN NAVIGATION -->
+						<nav class="nav-edit navbar " role="navigation" >
+							<div class="navbar-header">
+							    <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+							       <!--  <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span> -->
+							        <i class="fa fa-bars" aria-hidden="true"></i>
+							    </button>
+							    <div class="navbar-band">
+									<a href="/" class="site-logo" title="">
+					                    <img  class="img-responsive" src="<?php echo get_template_directory_uri()?>/img/demo-logo.png" alt="">
+					                </a>
+							    </div>
+							</div>
+			             	<div class="collapse navbar-collapse navbar-right">
+							  	<?php 
+							     wp_nav_menu( array(
+							       'theme_location' => 'main_nav', //Menu location của bạn
+							       // 'menu' => 'Page Menu',
+							       'depth' => 3, //Số cấp menu đa cấp
+							       'container' => 'div', //Thẻ bao quanh cặp thẻ ul
+							       'container_class'=>'collapse navbar-collapse js-navbar-collapse ', //class của thẻ bao quanh cặp thẻ ul
+							       'menu_class' => 'nav navbar-nav', //class của thẻ ul
+							       'walker' => new wp_bootstrap_navwalker()) //Cái này để nguyên, không thay đổi
+									);
+								?>
+							</div>
+						</nav>	
+					<!-- END NAVIGATION -->
+		            </div>
+		        </div>
 	        </div><!--//END HEADER -->
 	    <!-- begin declare -->
    		
