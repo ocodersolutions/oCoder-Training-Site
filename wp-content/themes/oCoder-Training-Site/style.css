@@ -183,9 +183,11 @@ a:focus {
   padding: 0 0 15px;
 }
 .post-new .breadcrumb {
-  margin-bottom: 20px;
+  margin: 20px 0px;
   background: none;
-  padding: 8px 0px;
+  padding: 9px 12px 8px;
+  background-color: #f5f5f5;
+  border-radius: 0px;
 }
 .post-new .breadcrumb .active {
   color: #00b7ff;
