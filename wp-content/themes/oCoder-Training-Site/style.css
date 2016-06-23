@@ -196,6 +196,13 @@ a:focus {
   margin: 6px 0 25px;
   overflow: hidden;
 }
+.blog-item h4{
+  font-weight: 400;
+  color:#000000;
+}
+.blog-item p{
+  color: #636363;
+}
 .post-new .blog-info {
   list-style: none;
   margin: 15px 0 12px 0;
@@ -232,6 +239,9 @@ a:focus {
 .post-new .sub-text .caption-text {
   margin-bottom: 30px;
   max-width: 100%;
+}
+.post-new .sub-text{
+  overflow:hidden;
 }
 .post-new .sub-text .caption-text p {
   font-style: italic;

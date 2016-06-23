@@ -214,6 +214,9 @@
 	            			|
 	            			<a href="javascript:;">Terms of Service</a> 
 	        			</div>
+                        <div class="pull-right">
+                           Website đang chạy thử nghiệm và đang chờ cấp phép của Bộ Công Thương
+                        </div>
         			</div>
         		</div>
         	</div>

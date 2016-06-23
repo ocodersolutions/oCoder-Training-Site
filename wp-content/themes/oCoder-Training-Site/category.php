@@ -14,9 +14,9 @@
             </div>
             <div class="row">
                 <div class="col-md-9 col-sm-9 blog-item">
-                    <div class="row">
+              
                         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-                        <div class="blog-content-line">
+                        <div class="row blog-content-line">
                             <div class="col-md-4 col-sm-4">
                                 <a href="<?php get_permalink();?>">
                                     <?php the_post_thumbnail('large',array('class'=>'img-responsive'));?>
@@ -38,8 +38,8 @@
                                     </li>
                                     <li>
                                         <i class="fa fa-eye"></i>
-                                        <?php setPostViews(get_the_ID()); ?>
-                                        <?php echo getPostViews(get_the_ID()); ?>
+                                        
+                                        <?php echo postview_get(get_the_ID()); ?>
                                     </li>
                                     <li>
                                         <i class="fa fa-tags"></i>
@@ -65,7 +65,7 @@
 	                        </div>
                     	<?php endif; ?>
                     	<!--end contet post -->
-                    </div>
+              
                     <div class="pagination_post">
                 		<?php page_nav(); ?>
                 	</div>

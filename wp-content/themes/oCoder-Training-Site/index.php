@@ -109,8 +109,9 @@
 			                            			</li>
 			                            			<li>
 			                            				<i class="fa fa-eye"></i>
-															<?php setPostViews(get_the_ID()); ?>
-															<?php echo getPostViews(get_the_ID()); ?>
+															<?php// setPostViews(get_the_ID()); ?>
+															<?php// echo getPostViews(get_the_ID()); ?>
+															<?php echo postview_get(get_the_ID()); ?>
 			                            			</li>
 			                            			<li>
 			                            				<i class="fa fa-tags"></i>
