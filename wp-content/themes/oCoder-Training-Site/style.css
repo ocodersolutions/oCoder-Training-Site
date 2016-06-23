@@ -657,7 +657,9 @@ ul.tag-info li i {
 .navigation-control{
   float: right;;
 }
-
+.blog-content-line .img-responsive{
+  margin: auto;
+}
 /*********responsive****************/
 @media (min-width: 320px) and (max-width: 767px){
   .banner .header{
