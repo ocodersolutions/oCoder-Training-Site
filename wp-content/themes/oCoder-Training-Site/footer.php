@@ -1,4 +1,5 @@
-		</div><!-- END CONTTENT PAGE-->
+	
+        </div><!-- END CONTTENT PAGE-->
 	</div> <!--END WRAPER-->
     <!-- BEGIN FOOTER -->
     <div class="pre-footer">

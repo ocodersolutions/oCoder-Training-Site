@@ -35,8 +35,7 @@
     <?php  ?>
     <script src="<?php echo get_template_directory_uri()?>/js/riple.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri()?>/js/menu.js" type="text/javascript"></script>
-
-	
+    
 </head>
 <body <?php body_class('home-page'); ?>>
 	<!-- wrapper -->
@@ -87,7 +86,7 @@
 	            <div class="container">
 	            	<div class="row">	
 			    		<!-- BEGIN NAVIGATION -->
-						<nav class="nav-edit navbar " role="navigation" >
+						<nav class="nav-edit navbar" role="navigation" >
 							<div class="navbar-header">
 							    <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
 							       <!--  <span class="sr-only">Toggle navigation</span>
