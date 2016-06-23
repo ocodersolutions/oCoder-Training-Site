@@ -130,8 +130,12 @@ class TopView_Widget extends WP_Widget {
                                 echo "</br><img src='http://dummyimage.com/50/000/fff&text=thach'>";*/
                             	
                         ?>
+
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <i class="fa fa-clock-o"></i>
+        				<span><?php the_time('d/m/Y');?></span>	 
                     </li>
+
  
             <?php endwhile;
             echo "</ul>";
