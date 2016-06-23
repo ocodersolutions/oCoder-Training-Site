@@ -2,9 +2,11 @@
 				<div class="col-md-3 col-sm-3  blog-sidebar">
 				   	
 				   	<div class="post-care">
+                        
                         <h3 class="sp-bold">
                             <span>DANH MỤC KHÁC</span>
                         </h3>
+              
                         <?php wp_nav_menu(array(
                         	'menu'=>'Categories ',
                         	'menu_class' => 'nav sidebar-categories'

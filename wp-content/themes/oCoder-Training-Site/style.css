@@ -40,12 +40,12 @@ a:focus {
   display: inline-block;
   margin-right: 5px;
   background: transparent;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  background: #1c2733;
+}
+.pre-header li{
+  border-right: solid 1px #d8d8d8;
+}
+.pre-header li:last-child {
+    border: none;
 }
 .pre-header .fa,
 .pre-header .icon {
@@ -662,9 +662,23 @@ ul.tag-info li i {
     border-bottom: 1px solid #e6e6e6;
     background: #f5f5f5;
   }
+  .title p {
+    width: 82%;
+  }
 
 }
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1023px){
+  .header .navbar-header{
+    width: 21%;
+  }
+  .banner .header .site-logo{
+    padding-top: 7px;
+  }
+  .header .navbar-nav{
+    margin-top: 5px;
+  }
+}
+@media (min-width: 1024px){
   .banner .header{
     background-color: #FFFFFF;
   }
@@ -675,9 +689,8 @@ ul.tag-info li i {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .nav-edit .nav>li{
-    border-bottom: 1px solid #e6e6e6;
-    background: #FFFFFF;
+  .header .navbar-nav{
+    margin-top: 5px;
   }
 
 }

@@ -46,40 +46,38 @@
 	        <div class="pre-header hidden-xs">
 	            <div class="container">
 	                <div class="row">
-	                	<div class="col-sm-12">
-		                    <div class="col-md-6 col-sm-6 additional-info">
-		                    	<div class="row">
-			                        <ul class="list-unstyled list-inline">
-			                            <li>
-			                                <i class="fa fa-phone"></i>
-			                                <a href="tel:+84963009280"><span>+84 960 009 280</span></a>
-			                            </li>
-			                            <li>
-			                                <i class="fa fa-envelope-o"></i>
-			                                <a href="mailto:ocodersolutions@gmail.com">
-			                                	<span>ocodersolutions@gmail.com</span>
-			                                </a>
-			                            </li>
-			                        </ul>
-			                    </div>
+	                    <div class="col-md-6 col-sm-6 additional-info">
+	                    	<div class="row">
+	                    	<ul class="list-unstyled list-inline">
+	                            <li>
+	                                <i class="fa fa-phone"></i>
+	                                <a href="tel:+84963009280"><span>+84 960 009 280</span></a>
+	                            </li>
+	                            <li>
+	                                <i class="fa fa-envelope-o"></i>
+	                                <a href="mailto:ocodersolutions@gmail.com">
+	                                	<span>ocodersolutions@gmail.com</span>
+	                                </a>
+	                            </li>
+	                        </ul>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6 col-sm-6 additional-nav">
+	                    	<div class="<row">
+		                       <!--  <ul class="list-unstyled list-inline pull-right">
+		                            <li>
+		                                <a href="#" class="pbr-user-login">
+		                                    <i class="fa fa-sign-in"></i> Đăng Nhập
+		                                </a>
+		                            </li>
+		                            <li>
+		                                <a href="#" title="" class="pbr-user-register">
+		                                    <i class="fa fa-pencil"></i> Đăng ký
+		                                </a>
+		                            </li>
+		                        </ul> -->
 		                    </div>
-		                    <div class="col-md-6 col-sm-6 additional-nav">
-		                    	<div class="<row">
-			                       <!--  <ul class="list-unstyled list-inline pull-right">
-			                            <li>
-			                                <a href="#" class="pbr-user-login">
-			                                    <i class="fa fa-sign-in"></i> Đăng Nhập
-			                                </a>
-			                            </li>
-			                            <li>
-			                                <a href="#" title="" class="pbr-user-register">
-			                                    <i class="fa fa-pencil"></i> Đăng ký
-			                                </a>
-			                            </li>
-			                        </ul> -->
-			                    </div>
-		                    </div>
-		                </div>
+	                    </div>
 	                </div>	
 	            </div>
 	        </div>

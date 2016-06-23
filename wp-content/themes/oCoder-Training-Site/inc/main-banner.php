@@ -14,12 +14,12 @@
 	                    </div>
 	                    <div class="col-sm-12">
 	                        <div class="banner-top text-center">
-	                            <div class="col-md-6 bn-left">
+	                            <div class="col-md-6 col-sm-12 bn-left">
 	                                <div class="pull-right">
 	                                    <img src="<?php echo get_template_directory_uri();?>/img/icn-1.png" alt="">
 	                                </div>
 	                            </div>
-	                            <div class="col-md-6 bn-right">
+	                            <div class="col-md-6 hidden-xs hidden-sm bn-right">
 	                                <img src="<?php echo get_template_directory_uri();?>/img/icn-2.png" alt="">
 	                            </div>
 	                            <div class="clearfix"></div>

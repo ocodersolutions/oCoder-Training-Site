@@ -7,22 +7,24 @@
 		<div class="post-new">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12 post-new">
+					<div class="col-md-12 col-sm-12 post-new">
 						<div class="breadcrum_links">
-							<?php the_breadcrumb(); ?>
-
+							<?php the_breadcrumb();?>
 	                    </div>
+		               
 	                </div>
                 </div>
                 <div class="row">
 					<div class="col-md-9 col-sm-9 blog-item">
-                            <div class="row">
+         
                             	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-	                                <h3>
-	                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>	
-	                                    </a>
-	                                </h3>
+								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+									<div class="row">
+		                                <h3>
+		                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>	
+		                                    </a>
+		                                </h3>
+	                                </div>
 	                                <hr class="blog-post-sep">
 	                                <div class="sub-text">
 	                                   	<?php the_content(); // Dynamic Content ?>
@@ -52,7 +54,7 @@
 				                    </ul>
 				                    <hr class="blog-post-sep">
                             	</div>
-                        	</div>
+                        	
 						 <?php endwhile; ?>
 						<?php endif; ?> 
 					</div>

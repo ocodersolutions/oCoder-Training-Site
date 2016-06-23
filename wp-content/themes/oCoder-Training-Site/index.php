@@ -7,7 +7,7 @@
 		<div class="feature-box">
     	<div class="container">
         	<div class="row">
-            <div class="col-md-12 col-sm-12 new-post">
+            <div class="col-md-12 col-xs-12 new-post">
                 <div class="row">
                     <div class="content-element">
                         <div class="widget-text-heading">
@@ -15,33 +15,34 @@
 								<span class="sp-bold">TIÊU ĐIỂM</span>
 							</h3>
                         </div>
-                        <div class="uc_four_colored_feature_boxs" style="max-width: 1170px; margin: 0 auto; ">
-                            <div class="uc_row">
-                                <div class="uc_col12">
+						
+                        <div class="uc_four_colored_feature_boxs ">
+	                        <div class="row">
+                                <div class="uc">
                                     <!-- Color box -->
                                     <ul class="uc_servicesList">
-                                        <li class="uc_box" style="background: #8460a4;">
+                                        <li class="uc_box col-md-3 col-sm-6 col-xs-12" style="background: #8460a4;">
                                             <a href="<?php echo get_category_link(5); ?> ">
                                                 <span class="uc_number" style=" background: #774e9c;">1</span>
                                                 <h3>HTML/CSS</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                             </a>
                                         </li>
-                                        <li class="uc_box" style="background: #FF6863;">
+                                        <li class="uc_box col-md-3 col-sm-6 col-xs-12" style="background: #FF6863;">
                                             <a href="<?php echo get_category_link(10)?>">
                                                 <span class="uc_number" style="background: #FC5653;">2</span>
                                                 <h3>PHP Căn bản</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                             </a>
                                         </li>
-                                        <li class="uc_box" style=" background: #3DCEC7;">
+                                        <li class="uc_box col-md-3 col-sm-6 col-xs-12" style=" background: #3DCEC7;">
                                             <a href="<?php echo get_category_link(13)?>">
                                                 <span class="uc_number" style=" background: #2ABFB5;">3</span>
                                                 <h3>Zend Framework</h3>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                             </a>
                                         </li>
-                                        <li class="uc_box" style=" background: #F4C949;">
+                                        <li class="uc_box col-md-3 col-sm-6 col-xs-12" style=" background: #F4C949;">
                                             <a href="<?php echo get_category_link(8)?>">
                                                 <span class="uc_number" style="background: #EABB3A;">4</span>
                                                 <h3>Wordpress</h3>
@@ -51,7 +52,7 @@
                                     </ul>
                                     <!--  End  Color box -->
                                 </div>
-                            </div>
+	                        </div>
                         </div>
                     </div>
                 </div>
@@ -64,7 +65,7 @@
 	<div class="post-new">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 post-new">
+                    <div class="col-md-sm col-sm-12 col-xs-12 post-new">
         <!-- LEFT SIDEBAR -->
                         <div class="col-md-9 col-sm-9 blog-posts">
                         	<div class="row">
@@ -76,14 +77,15 @@
 	                            <!-- slider -->
 	                          	<?php include (TEMPLATEPATH . '/inc/feature.php'); ?>
 	                            <!-- //slider -->
-	                           
 							</div>
-                            <div class="row">
-                            	<div class="widget-text-heading">
+                   
+                        	<div class="widget-text-heading">
+                        		<div class="row">
 	                                <h3 class="sp-bold">
 										<span >BÀI VIẾT MỚI NHẤT</span>
 									</h3>
-									 <!-- contet post -->
+								</div>
+								 <!-- contet post -->
 								<?php
 									global $post;
 									$recent_posts = get_posts('numberposts=3');
@@ -128,7 +130,7 @@
 									<?php } ?>
 	                            <!--end contet post -->
 	                        	</div>
-                            </div>
+                         
                         </div>
         <!-- END LEFT SIDEBAR -->
 
