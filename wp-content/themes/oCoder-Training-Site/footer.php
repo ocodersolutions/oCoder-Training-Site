@@ -209,13 +209,13 @@
         		<div class="col-md-12 col-sm-12 copyright">
         			<div class="row">
 	        			<div class="pull-left">
-	            			2015 © oCoder Solutions. ALL Rights Reserved.
+	            			2016 © oCoder Solutions. ALL Rights Reserved.
 	            			<a href="javascript:;">Privacy Policy</a>
 	            			|
 	            			<a href="javascript:;">Terms of Service</a> 
 	        			</div>
                         <div class="pull-right">
-                           Website đang chạy thử nghiệm và đang chờ cấp phép của Bộ Công Thương
+                           Website đang chạy thử nghiệm và đang chờ cấp phép của Bộ Thông Tin & Truyền Thông
                         </div>
         			</div>
         		</div>
@@ -230,7 +230,7 @@
 		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
 		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
+		ga('create', 'UA-XXXXXXXX-XX', 'ocoder-trainning.com');
 		ga('send', 'pageview');
 		</script>
 	</body>

@@ -116,12 +116,7 @@
 			                            			<li>
 			                            				<i class="fa fa-tags"></i>
 			                            				<?php
-															$posttags = get_the_tags();
-															if ($posttags) {
-															  foreach($posttags as $tag) {
-															    echo $tag->name . ' '; 
-															  }
-															}
+															the_tags( );
 														?>
 			                            			</li>
 			                            		</ul>

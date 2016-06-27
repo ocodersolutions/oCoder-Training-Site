@@ -16,8 +16,10 @@
                 </div>
                 <div class="row">
 					<div class="col-md-9 col-sm-9 blog-item">
-         
-                        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+         				
+                        <?php 
+                        	
+                        	if (have_posts()): while (have_posts()) : the_post(); ?>
 								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 									<div class="row">
 		                                <h3>
@@ -44,12 +46,7 @@
 	                        			<li>
 	                        				<i class="fa fa-tags"></i>
 	                        				<?php
-												$posttags = get_the_tags();
-												if ($posttags) {
-												  foreach($posttags as $tag) {
-												    echo $tag->name . ' '; 
-												  }
-												}
+												the_tags( );
 											?>
 	                        			</li>
 				                    </ul>

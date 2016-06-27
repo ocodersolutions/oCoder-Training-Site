@@ -6,14 +6,16 @@
                     <div class="col-sm-6">
                         <div class="title">
                             <div class="h1-sub ">
-                                <h1>CATEGORYS</h1>
-                                <?php the_category();?>
+                                <h1>CHUYÊN MỤC</h1>
+                                <p>
+                                    <?php single_cat_title() ?>
+                                <p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6"></div> 
                 </div>  
-            </div>
+            </div>  
         </div>
      </div>
 </div>
