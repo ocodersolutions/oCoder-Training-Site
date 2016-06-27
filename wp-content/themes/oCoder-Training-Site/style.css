@@ -122,6 +122,7 @@ a:focus {
   color: #fff;
   padding: 5px 8px;
   display: block;
+  float: left;
   font-size: 3.01em;
   letter-spacing: 4px;
   font-weight: 300;
@@ -168,7 +169,7 @@ a:focus {
   text-decoration: uppercase;
 }
 .post-new {
-  padding: 0 0 15px;
+  padding: 0px;
 }
 .post-new .breadcrumb {
   margin: 20px 0px;
@@ -550,7 +551,7 @@ ul.tag-info li i {
   font-family: 'Roboto Condensed', sans-serif;
   background: url(img/bg-html.png) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position-y: 100%;
   position: relative;
   height: 180px;
 }
@@ -657,7 +658,12 @@ ul.tag-info li i {
   position: relative;
   height: 180px
 }
-
+.item-banner .breadcrumb{
+  border-radius: 0px;
+  background-color: rgba(240, 240, 240, 0.8);
+  font-weight: 600;
+  font-size: 18px;
+}
 /*********responsive****************/
 @media (min-width: 320px) and (max-width: 767px){
   .banner .header{

@@ -6,10 +6,16 @@
                     <div class="col-sm-6">
                         <div class="title">
                             <div class="h1-sub ">
-                                <h1>BÀI VIẾT CHUYÊN MỤC </h1>
-                                <p>
-                                   <?php single_cat_title(); ?>
-                                </p>
+                                <div class="row">
+                                     <h1>BÀI VIẾT</h1>
+                                </div>
+                               
+                                <div class="row">
+                                    <div class="breadcrum_links">
+                                        <?php the_breadcrumb();?>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

@@ -5,8 +5,13 @@
 	                        <div class="col-sm-6">
 		                        <div class="title">
 		                            <div class="h1-sub ">
-		                                <h1>CHIA SẺ KIẾN THỨC</h1>
-		                                <p>SHARE THE BEST</p>
+		                            	<div class="row">
+		                            		 <h1>CHIA SẺ KIẾN THỨC</h1>
+		                            	</div>
+		                               	<div class="row">
+		                               		<p>SHARE THE BEST</p>
+		                               	</div>
+		                                
 		                            </div>
 		                        </div>
                     		</div>
