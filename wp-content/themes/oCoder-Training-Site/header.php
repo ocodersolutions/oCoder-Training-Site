@@ -32,7 +32,6 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/plugins/jquery-easing-min.js"></script>
     <script src="<?php echo get_template_directory_uri()?>/js/ocodertrainning.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri()?>/js/slide.js" type="text/javascript"></script>
-    <?php  ?>
     <script src="<?php echo get_template_directory_uri()?>/js/riple.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri()?>/js/menu.js" type="text/javascript"></script>
      <script src="<?php echo get_template_directory_uri()?>/js/back-to-top.js" type="text/javascript"></script>
@@ -114,6 +113,33 @@
 							       'walker' => new wp_bootstrap_navwalker()) //Cái này để nguyên, không thay đổi
 									);
 								?>
+								<div class="menu-search hidden-xs ">
+	                                <span class="sep"></span>
+	                                <i class="fa fa-search search-btn show-search-icon"></i>
+	                                <div class="search-box">
+	                                    <form  action="#">
+	                                        <div class="input-group">
+	                                            <input type="text" placeholder="Search" class="form-control">
+	                                            <span class="input-group-btn">
+	                                            <button class="btn btn-primary" type="submit">Search</button>
+	                                        </span>
+	                                        </div>
+	                                    </form>
+	                                </div>
+	                            </div>
+	                            <div class="menu-search visible-xs ">
+	                                <i class="fa fa-search search-btn show-search-icon"></i>
+	                                <div class="search-box">
+	                                    <form class="form-xs" action="#">
+	                                        <div class="input-group">
+	                                            <input type="text" placeholder="Search" class="form-control">
+	                                            <span class="input-group-btn">
+	                                            <button class="btn btn-primary" type="submit">Search</button>
+	                                        </span>
+	                                        </div>
+	                                    </form>
+	                                </div>
+	                            </div>
 							</div>
 						</nav>	
 					<!-- END NAVIGATION -->

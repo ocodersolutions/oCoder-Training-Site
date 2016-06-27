@@ -6,10 +6,17 @@
                     <div class="col-sm-6">
                         <div class="title">
                             <div class="h1-sub ">
-                                <h1>TAGS</h1>
-                                <p>
-                                    <?php single_tag_title(); ?> 
-                                </p>
+                                <div class="row">
+                                     <h1>TAGS</h1>
+                                </div>
+                                
+                                <div class="row">
+                                    <p>
+
+                                       <?php single_tag_title(); ?>
+                                    </p>
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -19,4 +26,3 @@
         </div>
      </div>
 </div>
-s

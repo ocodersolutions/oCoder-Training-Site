@@ -105,9 +105,9 @@ li.menu-search{
   height: 26px;
   background: #eaeaea;
   position: relative;
-  margin: 0 18px 0 16px;
+  margin: 0 10px 0 0px;
   display: inline-block;
-  top: -5px;
+  display: inline-block;
 }
 li.menu-search i {
     color: #333;
@@ -144,13 +144,16 @@ li.menu-search i {
 .menu-search .input.form-control {
   border-color: #dbdbdb;
   color: #777;
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: none;
 }
 .menu-search .input-group {
   position: relative;
   display: table;
-  border-collapse: separate;
+  border-collapse: separate;  
+}
+.menu-search .form-control, .menu-search .btn{
+   border-radius: 0px
 }
 .menu-search .input-group-btn {
   position: relative;

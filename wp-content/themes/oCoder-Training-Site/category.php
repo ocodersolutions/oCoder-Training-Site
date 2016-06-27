@@ -44,7 +44,7 @@
                                     <li>
                                         <i class="fa fa-tags"></i>
                                         <?php
-											the_tags( );
+											the_tags();
 										?>
                                     </li>
                                 </ul>
@@ -61,9 +61,9 @@
                     	<?php endif; ?>
                     	<!--end contet post -->
               
-                    <div class="pagination_post">
-                		<?php page_nav(); ?>
-                	</div>
+                    <div class="pagination_post text-center">
+                		<?php html5wp_pagination(); ?>
+                	</div> 
 					<hr class="blog-post-sep">
                 </div>
                  <!-- END LEFT SIDEBAR -->

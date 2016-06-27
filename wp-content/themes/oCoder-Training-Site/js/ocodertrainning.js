@@ -1,7 +1,18 @@
 $( document ).ready(function() {
 
-    	//Search
-	    $( ".search-btn" ).click(function() {
+    	function checkPosition() {
+    	
+		    if (window.matchMedia('(min-width:768px)').matches) {
+		       return true;
+		       
+		    } else {
+		        return false;
+		    }
+		}
+
+
+		if(checkPosition()){
+			 $( ".search-btn" ).click(function() {
 	    	var $div = $('.search-box');
 	  		if ($div.is(':visible')){
 
@@ -10,12 +21,17 @@ $( document ).ready(function() {
 	  		}else{
 	  			$div.show(200);
 	  		}
-		});
+			});
 
-		$('.search-btn,.search-box').click(function(e) { e.stopPropagation(); });
+			$('.search-btn,.search-box').click(function(e) { e.stopPropagation(); });
 
-		$(document).click(function() { 
-			$('.search-box').hide();
-		});
+			$(document).click(function() { 
+				$('.search-box').hide();
+			});
+		}
+		else{
+			$('.search-box').css("display", "block");
+		}
+
    
 });

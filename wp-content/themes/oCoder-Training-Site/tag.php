@@ -37,7 +37,7 @@
                                     <li>
                                         <i class="fa fa-tags"></i>
                                         <?php
-											the_tags( );
+											the_tags();
 										?>
                                     </li>
                                 </ul>
@@ -53,13 +53,13 @@
 	                        </div>
                     	<?php endif; ?>
                     	<!--end contet post -->
-              
-                    <div class="pagination_post">
-                		<?php page_nav(); ?>
-                	</div>
-					<hr class="blog-post-sep">
+                    
+					<!-- <hr class="blog-post-sep"> -->
                 </div>
                  <!-- END LEFT SIDEBAR -->
+                <div class="pagination_post">
+                		<?php page_nav(); ?>
+                </div>
     <?php get_sidebar(); ?>				
 
 <?php get_footer(); ?>

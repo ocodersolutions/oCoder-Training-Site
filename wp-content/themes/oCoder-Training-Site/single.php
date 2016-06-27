@@ -16,9 +16,7 @@
                 </div> -->
                 <div class="row">
 					<div class="col-md-9 col-sm-9 blog-item">
-         				
                         <?php 
-                        	
                         	if (have_posts()): while (have_posts()) : the_post(); ?>
 								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 									<div class="row">
@@ -46,7 +44,7 @@
 	                        			<li>
 	                        				<i class="fa fa-tags"></i>
 	                        				<?php
-												the_tags( );
+												the_tags();
 											?>
 	                        			</li>
 				                    </ul>
@@ -54,7 +52,9 @@
                             	</div>
                         	
 						 <?php endwhile; ?>
+
 						<?php endif; ?> 
+						 
 					</div>
 				<?php get_sidebar(); ?>
 				

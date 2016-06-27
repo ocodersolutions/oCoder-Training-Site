@@ -11,8 +11,8 @@
                 <div class="row">
                     <div class="content-element">
                         <div class="widget-text-heading">
-                            <h3>
-								<span class="sp-bold">TIÊU ĐIỂM</span>
+                            <h3 class="sp-bold" >
+								<span>TIÊU ĐIỂM</span>
 							</h3>
                         </div>
 						
@@ -123,10 +123,10 @@
 			                            	</div>
 	                           			 </div>
 	                           			<hr class="blog-post-sep">
+
 									<?php } ?>
 	                            <!--end contet post -->
 	                        	</div>
-                         
                         </div>
         <!-- END LEFT SIDEBAR -->
 
