@@ -482,9 +482,6 @@ function new_excrept_more($more)
 }
 add_filter('excerpt_more','new_excrept_more');
 
-// Phân trang
-
-
 // breadcumb
 function the_breadcrumb() {
     if (!is_home()) {
@@ -505,4 +502,14 @@ function the_breadcrumb() {
         }
     }
 }
+//thumbnail mặc định
+add_filter( 'post_thumbnail_html', 'my_post_thumbnail_html' );
+
+function my_post_thumbnail_html( $html ) {
+
+    if ( empty( $html ) )
+     $html = '<img src="' . trailingslashit( get_stylesheet_directory_uri() ) . 'img/default-thumbnail.png' . '" alt="default" />';
+    return $html;
+    }
+
 ?>

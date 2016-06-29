@@ -14,7 +14,6 @@
             </div>
             <div class="row">
                 <div class="col-md-9 col-sm-9 blog-item">
-              
                         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
                         <div class="row blog-content-line">
                             <div class="col-md-4 col-sm-4">
@@ -38,14 +37,11 @@
                                     </li>
                                     <li>
                                         <i class="fa fa-eye"></i>
-                                        
                                         <?php echo postview_get(get_the_ID()); ?>
                                     </li>
                                     <li>
                                         <i class="fa fa-tags"></i>
-                                        <?php
-											the_tags();
-										?>
+                                        <?php the_tags();?>
                                     </li>
                                 </ul>
                             </div>

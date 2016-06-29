@@ -1,6 +1,5 @@
   <div class="silder">	
     <ul id="accordion2">
-
     <?php 
     	global $post;
     	$args = array('numberposts'=> 3, 'category' =>3, 'orderby'=>'DESC');
@@ -20,7 +19,7 @@
 	            	<a href="<?php the_permalink();?>">Xem thêm</a>
 	            </p> -->
 	        </li>
-    	<?php endforeach; wp_reset_postdata(); ?>
+    <?php endforeach; wp_reset_postdata(); ?>
     </ul>
 	
 </div>

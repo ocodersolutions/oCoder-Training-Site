@@ -7,9 +7,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-sm-9 blog-item">
-              
                         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
                         <div class="row blog-content-line">
+                        
                             <div class="col-md-4 col-sm-4">
                                 <a href="<?php get_permalink();?>">
                                     <?php the_post_thumbnail('large',array('class'=>'img-responsive'));?>
@@ -46,20 +46,16 @@
                         <hr class="blog-post-sep">
                         <?php endwhile; else: ?>
                         	<div class="col-md-12">
-	                         	<h3>Tài nguyên chuyên mục 
-	                         		đang được xây dựng!</h3>
-	                         	<h5>Bạn vui lòng trở lại sau</h5>
-	                         	<h5>Xin cảm ơn!</h5>
+	                         	
 	                        </div>
                     	<?php endif; ?>
                     	<!--end contet post -->
                     
 					<!-- <hr class="blog-post-sep"> -->
+                   
                 </div>
                  <!-- END LEFT SIDEBAR -->
-                <div class="pagination_post">
-                		<?php page_nav(); ?>
-                </div>
+                
     <?php get_sidebar(); ?>				
 
 <?php get_footer(); ?>

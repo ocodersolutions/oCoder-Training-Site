@@ -113,28 +113,15 @@
 							       'walker' => new wp_bootstrap_navwalker()) //Cái này để nguyên, không thay đổi
 									);
 								?>
-								<div class="menu-search hidden-xs ">
-	                                <span class="sep"></span>
-	                                <i class="fa fa-search search-btn show-search-icon"></i>
+								<div class="menu-search">
+	                                <span class="sep hidden-xs"></span>
+	                                <i class="fa fa-search search-btn show-search-icon hidden-xs"></i>
 	                                <div class="search-box">
-	                                    <form  action="#">
+	                                    <form  class="form-xs" method="get" action="<?php echo home_url(); ?>" role="search" >
 	                                        <div class="input-group">
-	                                            <input type="text" placeholder="Search" class="form-control">
+	                                            <input name="s" type="text" placeholder="Search" class="form-control">
 	                                            <span class="input-group-btn">
-	                                            <button class="btn btn-primary" type="submit">Search</button>
-	                                        </span>
-	                                        </div>
-	                                    </form>
-	                                </div>
-	                            </div>
-	                            <div class="menu-search visible-xs ">
-	                                <i class="fa fa-search search-btn show-search-icon"></i>
-	                                <div class="search-box">
-	                                    <form class="form-xs" action="#">
-	                                        <div class="input-group">
-	                                            <input type="text" placeholder="Search" class="form-control">
-	                                            <span class="input-group-btn">
-	                                            <button class="btn btn-primary" type="submit">Search</button>
+	                                            <button role ="button" class="btn btn-primary" type="submit">Search</button>
 	                                        </span>
 	                                        </div>
 	                                    </form>
