@@ -34,7 +34,7 @@
     <script src="<?php echo get_template_directory_uri()?>/js/slide.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri()?>/js/riple.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri()?>/js/menu.js" type="text/javascript"></script>
-     <script src="<?php echo get_template_directory_uri()?>/js/back-to-top.js" type="text/javascript"></script>
+    <script src="<?php echo get_template_directory_uri()?>/js/back-to-top.js" type="text/javascript"></script>
     
 </head>
 <body <?php body_class('home-page'); ?>>
