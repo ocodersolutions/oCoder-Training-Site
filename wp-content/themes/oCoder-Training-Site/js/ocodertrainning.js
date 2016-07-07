@@ -21,7 +21,7 @@ $( document ).ready(function() {
 			}
 		});
 
-		$('.search-btn,.search-box').click(function(e) { e.stopPropagation(); });
+		$('.search-btn,.search-box').click(function ( e ) { e.stopPropagation(); });
 
 		$(document).click(function() { 
 			$('.search-box').hide();
@@ -29,7 +29,4 @@ $( document ).ready(function() {
 	} else{
 
 	}
-
-}
-   	
 });
