@@ -122,7 +122,6 @@
 			                            	</div>
 	                           			 </div>
 	                           			<hr class="blog-post-sep">
-
 									<?php } ?>
 	                            <!--end contet post -->
 	                        	</div>
