@@ -8,7 +8,18 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 intro">
                         <p class="text-center">
-                            <img src="<?php echo get_template_directory_uri();?>/img/logo/logo_2.png" alt="">
+                           <?php if (get_theme_mod('m1_logo')) : ?>
+                                        <a href="<?php echo esc_url(home_url('/'));?>"  title ="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home" class="site-logo text-center">
+                                            <img  class="img-responsive text-center" src="<?php echo get_theme_mod('m1_logo');?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>">
+                                        </a>
+                                    <?php else : ?>
+                                         <hgroup>
+                                            <h1 class="site-title">
+                                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                                            </h1>
+                                            <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+                                        </hgroup>
+                                    <?php endif; ?>
                         </p>
                         <p class="text-center">
                             oCodertranning là trang web phi lợi nhuận, tập trung vào việc chia sẻ kiến thức lập trình website nói riêng và kiến thức lập trình nói chung đến mọi người.

@@ -96,9 +96,18 @@
 							        <i class="fa fa-bars" aria-hidden="true"></i>
 							    </button>
 							    <div class="navbar-band">
-									<a href="/" class="site-logo" title="">
-					                    <img  class="img-responsive" src="<?php echo get_template_directory_uri()?>/img/demo-logo.png" alt="">
-					                </a>
+							    	<?php if (get_theme_mod('m1_logo')) : ?>
+										<a href="<?php echo esc_url(home_url('/'));?>"  title ="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home" class="site-logo">
+						                    <img  class="img-responsive" src="<?php echo get_theme_mod('m1_logo');?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>">
+						                </a>
+					            	<?php else : ?>
+						            	 <hgroup>
+									        <h1 class="site-title">
+									        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+									        </h1>
+									        <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+									    </hgroup>
+								 	<?php endif; ?>
 							    </div>
 							</div>
 			             	<div class="collapse navbar-collapse navbar-right">
