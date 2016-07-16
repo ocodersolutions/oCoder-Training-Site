@@ -135,7 +135,7 @@ a:focus {
   color:#FFFFFF;
   font-size: 3.01em;
   letter-spacing: 4px;
-  padding: 0px 8px;
+  padding: 10px 10px;
   font-weight: 300;
   margin: 0;
   text-transform: uppercase;
@@ -666,6 +666,7 @@ ul.tag-info li i {
   background-color: rgba(240, 240, 240, 0.8);
   font-weight: 600;
   font-size: 18px;
+  display: inline-block;
 }
 .menu-search{
   display: inline-block;
@@ -750,8 +751,5 @@ ul.tag-info li i {
   }
 
 }
-
-
-
 
 /**************************/

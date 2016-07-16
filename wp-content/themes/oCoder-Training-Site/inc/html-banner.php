@@ -12,9 +12,8 @@
                                 <div class="row">
                                     <p>
                                       <?php single_cat_title(); ?>
-                                    <p>  
-                                </div>
-                                
+                                    </p>  
+                                </div>  
                             </div>
                         </div>
                     </div>

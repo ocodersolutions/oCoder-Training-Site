@@ -96,18 +96,21 @@
 							        <i class="fa fa-bars" aria-hidden="true"></i>
 							    </button>
 							    <div class="navbar-band">
-							    	<?php if (get_theme_mod('m1_logo')) : ?>
-										<a href="<?php echo esc_url(home_url('/'));?>"  title ="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home" class="site-logo">
-						                    <img  class="img-responsive" src="<?php echo get_theme_mod('m1_logo');?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>">
-						                </a>
-					            	<?php else : ?>
-						            	 <hgroup>
+							    	<?php
+							    		global $tp_options;
+							    		if ($tp_options['logo-on'] == 0) : ?>
+
+							    		<hgroup>
 									        <h1 class="site-title">
 									        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 									        </h1>
 									        <p class="site-description"><?php bloginfo( 'description' ); ?></p>
 									    </hgroup>
-								 	<?php endif; ?>
+									<?php else: ?>
+										<a href="<?php echo esc_url(home_url('/'));?>"  title ="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home" class="site-logo">
+						                    <img  class="img-responsive" src="<?php echo $tp_options['logo-image']['url']; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>">
+						                </a>
+									<?php endif; ?>
 							    </div>
 							</div>
 			             	<div class="collapse navbar-collapse navbar-right">

@@ -14,6 +14,7 @@
 /*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
+require get_template_directory() . '/inc/oCoder-Options/init.php';
 
 if (!isset($content_width))
 {
@@ -511,9 +512,15 @@ function my_post_thumbnail_html( $html ) {
     if ( empty( $html ) )
      $html = '<img src="' . trailingslashit( get_stylesheet_directory_uri() ) . 'img/default-thumbnail.png' . '" alt="default" />';
     return $html;
-    }
-// Add file theme options
-include_once (TEMPLATEPATH .'/inc/theme-options.php');
-
+}
+/* 
+function showlog()
+{
+    global  $tp_options;
+    echo '<pre>';
+    var_dump($tp_options);
+    echo '<pre>';
+}
+add_action('showlog_d', 'showlog');*/
 
 ?>
