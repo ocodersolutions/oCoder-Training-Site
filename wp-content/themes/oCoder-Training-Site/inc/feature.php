@@ -1,8 +1,19 @@
   <div class="silder">	
     <ul id="accordion2">
     <?php 
+    	global $id_cat;
+
+    	global $tp_options;
+    	if ($tp_options['number_post'] == 0) { ?>
+    		<div class="alert alert-danger">
+ 			 <strong>Chú ý!</strong> Bạn chưa thêm số ID Category.
+			</div>
+      	<?php } else { 
+      		$id_cat = $tp_options['number_post'];
+      	
+      	} 
     	global $post;
-    	$args = array('numberposts'=> 3, 'category' =>3, 'orderby'=>'DESC');
+    	$args = array('numberposts'=> 3, 'category' => $id_cat);
     	$custom_post = get_posts($args);
     	foreach ($custom_post as $post) : setup_postdata( $post );?>
 	    	<li class="slide_opened">
@@ -21,4 +32,5 @@
 	        </li>
     <?php endforeach; wp_reset_postdata(); ?>
     </ul>
+    <?php //do_action('showlog_d' );?>
 </div>

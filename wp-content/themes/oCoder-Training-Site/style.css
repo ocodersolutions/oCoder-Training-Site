@@ -189,7 +189,7 @@ a:focus {
   font-weight: 400;
   color:#000000;
 }
-.post-new h3{
+h3{
   font-family: 'Roboto Condensed', sans-serif;
 }
 .blog-item p{
@@ -399,6 +399,10 @@ ul.tag-info li i {
 .pre-footer .intro {
   padding: 20px 0px;
   font-weight: 400;
+}
+.pre-footer .logo-ft {
+  width: 500px;
+  height: auto; 
 }
 .pre-footer .buttons {
   padding: 20px 0px;

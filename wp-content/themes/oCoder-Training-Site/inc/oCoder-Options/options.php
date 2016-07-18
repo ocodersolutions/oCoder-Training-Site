@@ -3,7 +3,7 @@
     /**
      * ReduxFramework Sample Config File
      * For full documentation, please visit: http://docs.reduxframework.com/
-     */
+     */ 
 
     if ( ! class_exists( 'oCoder_Theme_Options' ) ) {
 
@@ -100,36 +100,66 @@
                     )
                 );
 
-                 $this->sections[] = array(
-                    'id'    => 'opts-topbar-right',
-                    'title'  => __( 'Social', 'ot-site' ),
-                    'desc'   => __( 'Social link Settings', 'oCoder_Theme_Options' ),
-                    'type'         => 'repeater',
+             $this->sections[] = array(
+                    'id'        => 'opt-social-profiles',
+                    'type'      => 'social_profiles',
+                    'title'     => 'Social Profiles',
+                    'desc'   => __( 'If you delete the URL, icon will hide on your website.', 'oCoder_Theme_Options' ),
                     'icon'   => 'el el-globe',
-                    'group_values' => true,
-                    'item_name' => 'Social Icons',
-                    'fields'    => array(
+                    'subtitle'  => 'Click an icon to activate it, drag and drop to change the icon order.',
+                    'fields'=> array(
+                        
                         array(
-                            'id' => 'social-icon',
-                            'type' => 'select',
-                            'data' => 'elusive-icons',
-                            'title' => __( 'Icon', 'oCoder_Theme_Options' ),
-                            'subtitle' => __( 'Select a icon to appear before.', 'oCoder_Theme_Options' ),
+                             'id'          => 'facebook-url',
+                             'type'        => 'text',
+                             'title'       => __('Facebook URL', 'options'),
+                             'subtitle'    => __('Enter your Facebook URL.', 'options'),
+                             'default'     => 'http://facebook.com/'
                         ),
                         array(
-                            'id'        => 'social-url',
-                            'type'      => 'text',
-                            'title'     => __('Link URL', 'oCoder_Theme_Options'),
-                            'subtitle'  => __('This must be a valid URL i.e http://www.twitter.com/username', 'oCoder_Theme_Options'),
-                            'desc'      => __('This will make the icon linked.', 'redux-framework-demo'),
-                            'validate'  => 'url',
-                            'default'   => '',
-                        )
+                             'id'          => 'twitter-url',
+                             'type'        => 'text',
+                             'title'       => __('Twitter URL', 'options'),
+                             'subtitle'    => __('Enter your Twitter URL.', 'options'),
+                             'default'     => 'http://twitter.com/'
+                        ),
+                        array(
+                             'id'          => 'youtube-url',
+                             'type'        => 'text',
+                             'title'       => __('YouTube URL', 'options'),
+                             'subtitle'    => __('Enter your YouTube URL.', 'options'),
+                             'default'     => 'http://youtube.com/'
+                        ),
+                        array(
+                             'id'          => 'google-url',
+                             'type'        => 'text',
+                             'title'       => __('Google URL', 'options'),
+                             'subtitle'    => __('Enter your Google URL.', 'options'),
+                             'default'     => 'http://google.com/'
+                        ),
                     )
+
                 );
+                 $this->sections[] = array(
+                   
+                        'type'      => 'slider_setting',
+                        'title'     => 'Slider Setting',
+                        'icon'   => 'el el-photo',
+                        'desc'   => __( 'Category ID Default: 3', 'oCoder_Theme_Options' ),
+                        'fields'=> array(
+                            array(
+                                 'id'          => 'number_post',
+                                 'type'        => 'text',
+                                 'title'       => __('ID Category', 'oCoder_Theme_Options'),
+                                 'subtitle'    => __('Enter your  Category ID.', 'oCoder_Theme_Options'),
+                                'validate' => 'numeric',
+                                 'default'     => '3'
+                            ),
+                          
+                        )
 
-
-
+                    );
+                
             }
 
             public function setHelpTabs() {

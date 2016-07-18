@@ -7,26 +7,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 intro">
-                        <div class="logo-ft text-center">
-                           <?php
-                                global $tp_options;
+                        
+                       <?php
+                            global $tp_options;
 
-                                if ($tp_options['logo-on'] == 0) : ?>
+                            if ($tp_options['logo-on'] == 0) : ?>
 
-                                <hgroup>
-                                    <h1 class="site-title">
-                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-                                    </h1>
-                                    <p class="site-description">
-                                        <?php bloginfo( 'description' ); ?>
-                                    </p>
-                                </hgroup>
-                            <?php else: ?>
-                                <a href="<?php echo esc_url(home_url('/'));?>"  title ="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home" class="site-logo">
-                                    <img  class="img-responsive" src="<?php echo $tp_options['logo-image']['url']; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>">
-                                </a>
-                            <?php endif; ?>
-                        </div>
+                            <hgroup>
+                                <h1 class="site-title">
+                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                                </h1>
+                                <p class="site-description">
+                                    <?php bloginfo( 'description' ); ?>
+                                </p>
+                            </hgroup>
+                        <?php else: ?>
+                            <a href="<?php echo esc_url(home_url('/'));?>"  title ="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home" class="site-logo">
+                                <img  class="img-responsive" style="margin:0 auto" src="<?php echo $tp_options['logo-image']['url']; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>">
+                            </a>
+                        <?php endif; ?>
+                      
                     </div>
                     <div class="col-sm-12 col-md-12">
                         <p class="text-center">
@@ -34,7 +34,7 @@
                         </p>
                     </div>
                 </div>
-                </div>
+              
             </div>
         </div>
         <div class="bottom-footer">
@@ -43,15 +43,53 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-12 social text-center">
                             <div class="line">
-                                <a href="#" class="btn btn-5">
-                                    <i class="fa fa-facebook "></i>
-                                </a>
-                                <a href="#" class="btn btn-5">
-                                    <i class="fa fa-youtube "></i>
-                                </a>
-                                <a href="#" class="btn btn-5">
-                                    <i class="fa fa-google-plus "></i>
-                                </a>
+                                <?php
+                                    global $tp_options;
+                                    if ($tp_options['facebook-url'] != '') : ?>
+                                     <a href="<?php echo $tp_options['facebook-url']; ?>" class="btn btn-5">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <?php else: ?>
+                                        <a style="display:none" href="#" class="btn btn-5">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                <?php endif;?>
+
+                                <?php 
+                                    global $tp_options;
+                                    if ($tp_options['youtube-url'] != '') : ?>  
+                                        <a href="<?php echo $tp_options['youtube-url']; ?>" class="btn btn-5">
+                                            <i class="fa fa-youtube "></i>
+                                        </a>  
+                                    <?php else: ?>
+                                        <a style="display:none" href="#" class="btn btn-5">
+                                            <i class="fa fa-youtube "></i>
+                                        </a>  
+                                <?php endif;?>
+                                <?php 
+                                     global $tp_options;
+                                    if ($tp_options['google-url'] != '') : ?>  
+                                        
+                                        <a href="<?php echo $tp_options['google-url']; ?>" class="btn btn-5">
+                                              <i class="fa fa-google-plus "></i>
+                                        </a>
+                                    <?php else: ?>
+                                        <a style="display:none" href="#" class="btn btn-5">
+                                              <i class="fa fa-google-plus "></i>
+                                        </a>
+                                <?php endif;?>
+                                <?php 
+                                     global $tp_options;
+                                    if ($tp_options['twitter-url'] != '') : ?>  
+                                        
+                                        <a href="<?php echo $tp_options['twitter-url']; ?>" class="btn btn-5">
+                                              <i class="fa fa-twitter "></i>
+                                        </a>
+                                    <?php else: ?>
+                                        <a style="display:none" href="#" class="btn btn-5">
+                                              <i class="fa fa-twitter "></i>
+                                        </a>
+                                <?php endif;?>
                             </div>
                         </div>
                     </div>
