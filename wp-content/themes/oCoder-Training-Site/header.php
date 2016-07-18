@@ -16,7 +16,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&subset=vietnamese' rel='stylesheet' type='text/css'>
 	<link href="<?php echo get_template_directory_uri()?>/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri()?>/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
 	<link rel="pingback" href="<?php bloginfo('pingback_url');?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/search.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/four_colored_feature_boxs.css">
@@ -98,8 +97,8 @@
 							    <div class="navbar-band">
 							    	<?php
 							    		global $tp_options;
-							    		if ($tp_options['logo-on'] == 0) : ?>
 
+							    		if ($tp_options['logo-on'] == 0) : ?>
 							    		<hgroup>
 									        <h1 class="site-title">
 									        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -111,6 +110,7 @@
 						                    <img  class="img-responsive" src="<?php echo $tp_options['logo-image']['url']; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>">
 						                </a>
 									<?php endif; ?>
+
 							    </div>
 							</div>
 			             	<div class="collapse navbar-collapse navbar-right">
@@ -146,4 +146,3 @@
 		        </div>
 	        </div><!--//END HEADER -->
 	    <!-- begin declare -->
-   		

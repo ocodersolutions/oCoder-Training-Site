@@ -17,7 +17,9 @@
                                     <h1 class="site-title">
                                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
                                     </h1>
-                                    <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+                                    <p class="site-description">
+                                        <?php bloginfo( 'description' ); ?>
+                                    </p>
                                 </hgroup>
                             <?php else: ?>
                                 <a href="<?php echo esc_url(home_url('/'));?>"  title ="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home" class="site-logo">

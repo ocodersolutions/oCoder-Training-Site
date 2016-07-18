@@ -53,26 +53,26 @@
                 // ACTUAL DECLARATION OF SECTIONS
                 $this->sections[] = array(
                     'title'  => __( 'Header', 'ot-site' ),
-                    'desc'   => __( 'All of setings for header on this theme.', 'thachpham' ),
-                    'icon'   => '',
+                    'desc'   => __( 'All of setings for header on this theme.', 'oCoder_Theme_Options' ),
+                    'icon'   => 'el el-website',
                     // 'submenu' => false, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
                     'fields' => array(
 
                         array(
                             'id'       => 'logo-on',
                             'type'     => 'switch',
-                            'title'    => __( 'Enable Image Logo', 'thachpham' ),
+                            'title'    => __( 'Enable Image Logo', 'oCoder_Theme_Options' ),
                             'compiler' => 'bool',
                             // Can be set to false to allow any media type, or can also be set to any mime type.
-                            'desc'     => __( 'Do you want to enable image logo?', 'thachpham' ),
-                            'on'        => __('Enabled', 'thachpham'),
-                            'off'       => __('Disabled', 'thachpham')
+                            'desc'     => __( 'Do you want to enable image logo?', 'oCoder_Theme_Options' ),
+                            'on'        => __('Enabled', 'oCoder_Theme_Options'),
+                            'off'       => __('Disabled', 'oCoder_Theme_Options')
                         ),
                         array(
                             'id'    => 'logo-image',
                             'type'  => 'media',
-                            'title' => __('Logo Image', 'thachpham'),
-                            'desc'  => __('Image that you want to use as logo.', 'thachpham')
+                            'title' => __('Logo Image', 'oCoder_Theme_Options'),
+                            'desc'  => __('Image that you want to use as logo.', 'oCoder_Theme_Options')
                         ),
                         
                     )
@@ -80,14 +80,14 @@
 
                 $this->sections[] = array(
                     'title'  => __( 'Typography', 'ot-site' ),
-                    'desc'   => __( 'All of typography settings.', 'thachpham' ),
+                    'desc'   => __( 'All of typography settings.', 'oCoder_Theme_Options' ),
                     'icon'   => 'el el-icon-font',
 
                     'fields' => array(
                         array(
                             'id'       => 'typo-main',
                             'type'     => 'typography',
-                            'title'    => __( 'Main Typography', 'thachpham' ),
+                            'title'    => __( 'Main Typography', 'oCoder_Theme_Options' ),
                             'output'    => 'body',
                             'text-transform'    => true,
                             'default'   => array(
@@ -97,6 +97,34 @@
                             )
                         ),
 
+                    )
+                );
+
+                 $this->sections[] = array(
+                    'id'    => 'opts-topbar-right',
+                    'title'  => __( 'Social', 'ot-site' ),
+                    'desc'   => __( 'Social link Settings', 'oCoder_Theme_Options' ),
+                    'type'         => 'repeater',
+                    'icon'   => 'el el-globe',
+                    'group_values' => true,
+                    'item_name' => 'Social Icons',
+                    'fields'    => array(
+                        array(
+                            'id' => 'social-icon',
+                            'type' => 'select',
+                            'data' => 'elusive-icons',
+                            'title' => __( 'Icon', 'oCoder_Theme_Options' ),
+                            'subtitle' => __( 'Select a icon to appear before.', 'oCoder_Theme_Options' ),
+                        ),
+                        array(
+                            'id'        => 'social-url',
+                            'type'      => 'text',
+                            'title'     => __('Link URL', 'oCoder_Theme_Options'),
+                            'subtitle'  => __('This must be a valid URL i.e http://www.twitter.com/username', 'oCoder_Theme_Options'),
+                            'desc'      => __('This will make the icon linked.', 'redux-framework-demo'),
+                            'validate'  => 'url',
+                            'default'   => '',
+                        )
                     )
                 );
 

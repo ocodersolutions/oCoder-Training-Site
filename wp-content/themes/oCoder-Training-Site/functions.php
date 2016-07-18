@@ -513,7 +513,7 @@ function my_post_thumbnail_html( $html ) {
      $html = '<img src="' . trailingslashit( get_stylesheet_directory_uri() ) . 'img/default-thumbnail.png' . '" alt="default" />';
     return $html;
 }
-/* 
+ 
 function showlog()
 {
     global  $tp_options;
@@ -521,6 +521,6 @@ function showlog()
     var_dump($tp_options);
     echo '<pre>';
 }
-add_action('showlog_d', 'showlog');*/
+add_action('showlog_d', 'showlog');
 
 ?>

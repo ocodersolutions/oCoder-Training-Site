@@ -1,5 +1,5 @@
 <?php
-function thachpham_plugin_activation() {
+function oCoder_Theme_Options_plugin_activation() {
 
 	// Khai bao plugin can cai dat
 	$plugins = array(
@@ -20,5 +20,5 @@ function thachpham_plugin_activation() {
 	tgmpa( $plugins, $configs );
 
 }
-add_action('tgmpa_register', 'thachpham_plugin_activation');
+add_action('tgmpa_register', 'oCoder_Theme_Options_plugin_activation');
 ?>
